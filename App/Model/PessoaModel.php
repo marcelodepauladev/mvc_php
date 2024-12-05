@@ -17,7 +17,7 @@ class PessoaModel
             $dao->insert($this);
 
         }else{
-            
+
             $dao->update($this);
         }
     }
@@ -49,7 +49,14 @@ class PessoaModel
         } else {
             return new PessoaModel();
         }*/
-
     }
 
+    public function delete (int $id)
+    {
+        include "DAO/PessoaDAO.php";
+
+        $dao = new PessoaDAO();
+
+        $dao->delete($id);
+    }
 }

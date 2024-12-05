@@ -36,6 +36,7 @@ class PessoaDAO
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->cpf);
         $stmt->bindValue(3, $model->data_nascimento);
+        $stmt->bindValue(4, $model->id);
 
         $stmt->execute();
     }

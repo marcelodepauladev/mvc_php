@@ -25,6 +25,10 @@ switch ($url)
         PessoaController::save();
     break;
     
+    case '/pessoa/delete':
+        PessoaController::delete();
+    break;
+
     //Default funciona com um erro 404
     default:
         echo'Erro 404';
